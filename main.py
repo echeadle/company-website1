@@ -15,7 +15,7 @@ st.subheader(heading1)
 
 df = pandas.read_csv("data.csv", sep=",")
 
-col1, empty_col1, col2, empty_col2, col3 = st.columns([1.5, 0.25, 1.5, 0.25, 1.5])
+col1, col2, col3 = st.columns([1.5,  1.5, 1.5])
 
 with col1:
     for index, row in df[:4].iterrows():
